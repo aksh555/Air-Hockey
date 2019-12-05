@@ -1,5 +1,5 @@
 import pygame,sys
-import random
+import random,pickle
 from pygame.locals import *
 from sys import exit
 
@@ -35,7 +35,8 @@ def create_score(c,p):
     pickle.dump([c,p],scorefile)
     scorefile.close()
     scorefile=open('Scores.dat','rb+')
-    print "\nCOMPUTER","\t"*3,"PLAYER"
+    print "\n PAST SCORES\n"
+    print "COMPUTER","\t"*3,"PLAYER"
     while True:
         try:        
             score=pickle.load(scorefile)
@@ -66,10 +67,12 @@ def homescreen(c,p):
     if c >=5:
         cpuwin=font4.render("YOU LOSE",True,white)
         screen.blit(cpuwin,(150,250))
+	create_score(c,p)
         pygame.display.flip()
     if p >=5:
         cpuwin=font4.render("YOU WIN",True,white)
         screen.blit(cpuwin,(150,250))
+	create_score(c,p)
         pygame.display.flip()
     playerScore=0
     cpuScore=0
