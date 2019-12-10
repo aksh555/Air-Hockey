@@ -1,6 +1,6 @@
 # Air-Hockey
 Simulation of air hockey game in Python using Python2, Pygame.
-Made for Class 12 Computer Science project.
+Started in Class 12 as part of Computer Science project.
 
 ## Installation
 ### Cloning repository
@@ -21,11 +21,13 @@ Use python2 in case Python3 is also installed in the machine
 >> python AirHockey.py
 ```
 
-***Real time scores are visible on the top and bottom left corners of the game screens.
+*Real time scores are visible on the top and bottom left corners of the game screens.
 Detailed logs get updated on the terminal during the course of the game.
-All scores are also stored in a binary file, and the past scores are shown at the end of each game.***
+All scores are also stored in a binary file, and the past scores are shown at the end of each game.*
 
 **SPEED CONTROL: Puck speed can be manually changed by changing the value in line 372 of AirHockey.py.
 Higher the value, faster it gets!**
 
-## *Happy Gaming!!*
+#### *Happy Gaming!!*
+
+Contributions are welcome!
