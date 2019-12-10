@@ -29,5 +29,3 @@ All scores are also stored in a binary file, and the past scores are shown at th
 Higher the value, faster it gets!**
 
 #### *Happy Gaming!!*
-
-Contributions are welcome!
